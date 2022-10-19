@@ -1,5 +1,5 @@
 {
-  "name": "knowledge-graph-test",
+  "name": "knowledge-graph-demo",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,9 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "antd": "^4.23.5",
+    "mongodb": "^4.10.0",
     "next": "12.3.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-knowledge-graph": "^0.1.38"
   },
   "devDependencies": {
     "@types/node": "18.8.3",
