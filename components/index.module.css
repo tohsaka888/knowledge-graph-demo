@@ -1,0 +1,17 @@
+.control-button {
+  position: fixed;
+  top: 10vh;
+  background: #1890ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 8px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  box-shadow: 0px 0px 30px 5px #dfdfdf;
+}
+
+.control-button::after {
+  content: "";
+  width: 5px;
+}
