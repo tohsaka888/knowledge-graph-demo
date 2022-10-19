@@ -11,6 +11,7 @@ specifiers:
   next: 12.3.1
   react: 18.2.0
   react-dom: 18.2.0
+  react-icons: ^4.6.0
   react-knowledge-graph: ^0.1.38
   typescript: 4.8.4
 
@@ -20,6 +21,7 @@ dependencies:
   next: 12.3.1_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  react-icons: 4.6.0_react@18.2.0
   react-knowledge-graph: 0.1.38_5uumaiclxbdbzaqafclbf6maf4
 
 devDependencies:
