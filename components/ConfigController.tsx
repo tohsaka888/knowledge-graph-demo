@@ -1,4 +1,9 @@
-import React, { createContext, useDeferredValue, useReducer } from "react";
+import React, {
+  createContext,
+  CSSProperties,
+  useDeferredValue,
+  useReducer,
+} from "react";
 import { ConfigProps } from "react-knowledge-graph";
 
 const initialState: Omit<ConfigProps, "onExploreEnd" | "explore"> = {
@@ -20,6 +25,8 @@ const initialState: Omit<ConfigProps, "onExploreEnd" | "explore"> = {
     根节点: {
       radius: 25,
       fill: "#747ba6",
+      typeSize: 12,
+      nameSize: 12,
       hoverStyle: {
         fill: "#3949a3",
       },
@@ -58,7 +65,15 @@ type ActionType =
   | { type: "setPosition"; payload: { x: number; y: number } }
   | { type: "setBasicDistence"; payload: number }
   | { type: "setStrokeWidth"; payload: number }
-  | { type: "setStroke"; payload: string };
+  | { type: "setStroke"; payload: string }
+  | {
+      type: "setTypeConfig";
+      payload: {
+        type: string;
+        option: string;
+        value: string | number | CSSProperties;
+      };
+    };
 
 function reducer(
   state: typeof initialState,
@@ -83,6 +98,18 @@ function reducer(
         edgeConfig: {
           ...state.edgeConfig,
           stroke: action.payload,
+        },
+      };
+    case "setTypeConfig":
+      const { type, option, value } = action.payload;
+      return {
+        ...state,
+        typeConfig: {
+          ...state.typeConfig,
+          [type]: {
+            ...state.typeConfig![type],
+            [option]: value,
+          },
         },
       };
     default:
