@@ -1,5 +1,5 @@
 import { Drawer, Form, Input, Slider } from "antd";
-import React, { useContext, useState } from "react";
+import React, { startTransition, useContext, useState } from "react";
 import { BsFillGearFill } from "react-icons/bs";
 import { ConfigContext } from "./ConfigController";
 import GenerateCode from "./GenerateCode";
@@ -47,7 +47,9 @@ function ControlPanel() {
                 min={10}
                 max={100}
                 onChange={(value) => {
-                  dispatch({ type: "setBasicDistence", payload: +value });
+                  startTransition(() => {
+                    dispatch({ type: "setBasicDistence", payload: +value });
+                  });
                 }}
               />
             </Form.Item>
@@ -55,9 +57,11 @@ function ControlPanel() {
               <Input
                 type={"number"}
                 onChange={(e) => {
-                  dispatch({
-                    type: "setPosition",
-                    payload: { x: +e.target.value, y: config.position.y },
+                  startTransition(() => {
+                    dispatch({
+                      type: "setPosition",
+                      payload: { x: +e.target.value, y: config.position.y },
+                    });
                   });
                 }}
               />
@@ -79,7 +83,9 @@ function ControlPanel() {
                 max={3}
                 step={0.01}
                 onChange={(value) => {
-                  dispatch({ type: "setStrokeWidth", payload: +value });
+                  startTransition(() => {
+                    dispatch({ type: "setStrokeWidth", payload: +value });
+                  });
                 }}
               />
             </Form.Item>
@@ -87,7 +93,9 @@ function ControlPanel() {
               <Input
                 type={"color"}
                 onChange={(e) => {
-                  dispatch({ type: "setStroke", payload: e.target.value });
+                  startTransition(() => {
+                    dispatch({ type: "setStroke", payload: e.target.value });
+                  });
                 }}
               />
             </Form.Item>
