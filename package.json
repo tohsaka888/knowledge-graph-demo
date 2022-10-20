@@ -9,13 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "antd": "^4.23.5",
-    "mongodb": "^4.10.0",
+    "antd": "4.23.6",
+    "mongodb": "4.11.0",
     "next": "12.3.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-icons": "^4.6.0",
-    "react-knowledge-graph": "^0.1.38"
+    "react-icons": "4.6.0",
+    "react-knowledge-graph": "0.1.39"
   },
   "devDependencies": {
     "@types/node": "18.8.3",
