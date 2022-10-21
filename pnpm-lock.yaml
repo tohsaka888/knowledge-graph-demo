@@ -14,7 +14,7 @@ specifiers:
   react-copy-to-clipboard: 5.1.0
   react-dom: 18.2.0
   react-icons: 4.6.0
-  react-knowledge-graph: ^0.1.41
+  react-knowledge-graph: 0.1.41
   typescript: 4.8.4
 
 dependencies:
