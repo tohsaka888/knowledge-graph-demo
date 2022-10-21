@@ -9,6 +9,8 @@
   border-top-right-radius: 12px;
   border-bottom-right-radius: 12px;
   box-shadow: 0px 0px 30px 5px #dfdfdf;
+  z-index: 9999;
+  cursor: pointer;
 }
 
 .control-button::after {

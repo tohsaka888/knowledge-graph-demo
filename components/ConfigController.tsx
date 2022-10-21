@@ -9,6 +9,8 @@ import { ConfigProps } from "react-knowledge-graph";
 const initialState: Omit<ConfigProps, "onExploreEnd" | "explore"> = {
   basicDistence: 30,
   position: { x: 0, y: 0 },
+  width: "100vw",
+  height: "100vh",
   node: {
     id: "node-0",
     type: "根节点",
