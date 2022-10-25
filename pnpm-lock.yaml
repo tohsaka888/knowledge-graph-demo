@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@types/node': 18.8.3
+  '@types/node': 18.11.5
   '@types/react': 18.0.21
   '@types/react-copy-to-clipboard': 5.0.4
   '@types/react-dom': 18.0.6
@@ -28,7 +28,7 @@ dependencies:
   react-knowledge-graph: 0.1.41_5uumaiclxbdbzaqafclbf6maf4
 
 devDependencies:
-  '@types/node': 18.8.3
+  '@types/node': 18.11.5
   '@types/react': 18.0.21
   '@types/react-copy-to-clipboard': 5.0.4
   '@types/react-dom': 18.0.6
@@ -1105,8 +1105,8 @@ packages:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
     dev: true
 
-  /@types/node/18.8.3:
-    resolution: {integrity: sha512-0os9vz6BpGwxGe9LOhgP/ncvYN5Tx1fNcd2TM3rD/aCGBkysb+ZWpXEocG24h6ZzOi13+VB8HndAQFezsSOw1w==}
+  /@types/node/18.11.5:
+    resolution: {integrity: sha512-3JRwhbjI+cHLAkUorhf8RnqUbFXajvzX4q6fMn5JwkgtuwfYtRQYI3u4V92vI6NJuTsbBQWWh3RZjFsuevyMGQ==}
 
   /@types/prop-types/15.7.5:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
@@ -1143,7 +1143,7 @@ packages:
   /@types/whatwg-url/8.2.2:
     resolution: {integrity: sha512-FtQu10RWgn3D9U4aazdwIE2yzphmTJREDqNdODHrbrZmmMqI0vMheC/6NE/J1Yveaj8H+ela+YwWTjq5PGmuhA==}
     dependencies:
-      '@types/node': 18.8.3
+      '@types/node': 18.11.5
       '@types/webidl-conversions': 7.0.0
     dev: false
 
