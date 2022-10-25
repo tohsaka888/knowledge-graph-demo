@@ -16,7 +16,7 @@
     "react-copy-to-clipboard": "5.1.0",
     "react-dom": "18.2.0",
     "react-icons": "4.6.0",
-    "react-knowledge-graph": "0.2.0"
+    "react-knowledge-graph": "^0.2.0"
   },
   "devDependencies": {
     "@types/node": "18.11.5",
