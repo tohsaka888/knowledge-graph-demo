@@ -19,10 +19,10 @@
     "react-knowledge-graph": "0.2.0"
   },
   "devDependencies": {
-    "@types/node": "18.8.3",
+    "@types/node": "18.11.5",
     "@types/react": "18.0.21",
     "@types/react-copy-to-clipboard": "5.0.4",
-    "@types/react-dom": "18.0.6",
+    "@types/react-dom": "18.0.7",
     "eslint": "8.25.0",
     "eslint-config-next": "12.3.1",
     "typescript": "4.8.4"
