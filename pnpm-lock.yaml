@@ -4,7 +4,7 @@ specifiers:
   '@types/node': 18.11.7
   '@types/react': 18.0.23
   '@types/react-copy-to-clipboard': 5.0.4
-  '@types/react-dom': 18.0.7
+  '@types/react-dom': 18.0.8
   antd: 4.23.6
   eslint: 8.26.0
   eslint-config-next: 13.0.0
@@ -25,13 +25,13 @@ dependencies:
   react-copy-to-clipboard: 5.1.0_react@18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-icons: 4.6.0_react@18.2.0
-  react-knowledge-graph: 0.2.2_6v6cuqnzjlfigkhgmcz4pxhsva
+  react-knowledge-graph: 0.2.2_so3vmsiv37ilpeotgzti7vh2w4
 
 devDependencies:
   '@types/node': 18.11.7
   '@types/react': 18.0.23
   '@types/react-copy-to-clipboard': 5.0.4
-  '@types/react-dom': 18.0.7
+  '@types/react-dom': 18.0.8
   eslint: 8.26.0
   eslint-config-next: 13.0.0_wyqvi574yv7oiwfeinomdzmc3m
   typescript: 4.8.4
@@ -1078,7 +1078,7 @@ packages:
     dependencies:
       immer: 9.0.16
       react: 18.2.0
-      react-redux: 8.0.4_6v6cuqnzjlfigkhgmcz4pxhsva
+      react-redux: 8.0.4_so3vmsiv37ilpeotgzti7vh2w4
       redux: 4.2.0
       redux-thunk: 2.4.1_redux@4.2.0
       reselect: 4.1.6
@@ -1117,8 +1117,8 @@ packages:
       '@types/react': 18.0.23
     dev: true
 
-  /@types/react-dom/18.0.7:
-    resolution: {integrity: sha512-HaXc+BbqAZE1RdsK3tC8SbkFy6UL2xF76lT9rQs5JkPrJg3rWA3Ou/Lhw3YJQzEDkBpmJ79nBsfnd05WrBd2QQ==}
+  /@types/react-dom/18.0.8:
+    resolution: {integrity: sha512-C3GYO0HLaOkk9dDAz3Dl4sbe4AKUGTCfFIZsz3n/82dPNN8Du533HzKatDxeUYWu24wJgMP1xICqkWk1YOLOIw==}
     dependencies:
       '@types/react': 18.0.23
 
@@ -3232,13 +3232,13 @@ packages:
     resolution: {integrity: sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==}
     dev: false
 
-  /react-knowledge-graph/0.2.2_6v6cuqnzjlfigkhgmcz4pxhsva:
+  /react-knowledge-graph/0.2.2_so3vmsiv37ilpeotgzti7vh2w4:
     resolution: {integrity: sha512-D/AZpibVl3ooiTK0uZabm7T5TQyGhKouIRFuLS+H6C1tNhetLUI6Ux5EWd5UBhVYEvTFnuBYxVY6cC2V4uwhdw==}
     dependencies:
       '@reduxjs/toolkit': 1.8.6_kuo2ie247izvzll3jejufdtq3q
       framer-motion: 7.6.1_biqbaboplfbrettd7655fr4n2y
       react-icons: 4.6.0_react@18.2.0
-      react-redux: 8.0.4_6v6cuqnzjlfigkhgmcz4pxhsva
+      react-redux: 8.0.4_so3vmsiv37ilpeotgzti7vh2w4
     transitivePeerDependencies:
       - '@types/react'
       - '@types/react-dom'
@@ -3248,7 +3248,7 @@ packages:
       - redux
     dev: false
 
-  /react-redux/8.0.4_6v6cuqnzjlfigkhgmcz4pxhsva:
+  /react-redux/8.0.4_so3vmsiv37ilpeotgzti7vh2w4:
     resolution: {integrity: sha512-yMfQ7mX6bWuicz2fids6cR1YT59VTuT8MKyyE310wJQlINKENCeT1UcPdEiX6znI5tF8zXyJ/VYvDgeGuaaNwQ==}
     peerDependencies:
       '@types/react': ^16.8 || ^17.0 || ^18.0
@@ -3272,7 +3272,7 @@ packages:
       '@babel/runtime': 7.19.0
       '@types/hoist-non-react-statics': 3.3.1
       '@types/react': 18.0.23
-      '@types/react-dom': 18.0.7
+      '@types/react-dom': 18.0.8
       '@types/use-sync-external-store': 0.0.3
       hoist-non-react-statics: 3.3.2
       react: 18.2.0
