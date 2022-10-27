@@ -14,7 +14,7 @@ specifiers:
   react-copy-to-clipboard: 5.1.0
   react-dom: 18.2.0
   react-icons: 4.6.0
-  react-knowledge-graph: 0.2.1
+  react-knowledge-graph: 0.2.2
   typescript: 4.8.4
 
 dependencies:
@@ -25,7 +25,7 @@ dependencies:
   react-copy-to-clipboard: 5.1.0_react@18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-icons: 4.6.0_react@18.2.0
-  react-knowledge-graph: 0.2.1_6v6cuqnzjlfigkhgmcz4pxhsva
+  react-knowledge-graph: 0.2.2_6v6cuqnzjlfigkhgmcz4pxhsva
 
 devDependencies:
   '@types/node': 18.11.7
@@ -3232,8 +3232,8 @@ packages:
     resolution: {integrity: sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==}
     dev: false
 
-  /react-knowledge-graph/0.2.1_6v6cuqnzjlfigkhgmcz4pxhsva:
-    resolution: {integrity: sha512-xrnyUJIFaT8aAdFd9bC3gzN/xvHpxWod2/pv/rq3ZI83VNMA3GggxlszXy2aDFVsmSvu+3kuAkgfwfLy/dHYng==}
+  /react-knowledge-graph/0.2.2_6v6cuqnzjlfigkhgmcz4pxhsva:
+    resolution: {integrity: sha512-D/AZpibVl3ooiTK0uZabm7T5TQyGhKouIRFuLS+H6C1tNhetLUI6Ux5EWd5UBhVYEvTFnuBYxVY6cC2V4uwhdw==}
     dependencies:
       '@reduxjs/toolkit': 1.8.6_kuo2ie247izvzll3jejufdtq3q
       framer-motion: 7.6.1_biqbaboplfbrettd7655fr4n2y
