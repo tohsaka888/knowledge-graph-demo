@@ -9,6 +9,7 @@ import type { NextPage } from "next";
 import KnowledgeGraphCanvas from "components/KnowledgeGraphCanvas";
 import ControlPanel from "components/ControlPanel";
 import ConfigController from "components/ConfigController";
+import "react-knowledge-graph/KnowledgeGraph/index.css";
 
 const Home: NextPage = () => {
   return (
