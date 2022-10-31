@@ -14,7 +14,7 @@ specifiers:
   react-copy-to-clipboard: 5.1.0
   react-dom: 18.2.0
   react-icons: 4.6.0
-  react-knowledge-graph: 0.2.2
+  react-knowledge-graph: 0.3.0
   typescript: 4.8.4
 
 dependencies:
@@ -25,7 +25,7 @@ dependencies:
   react-copy-to-clipboard: 5.1.0_react@18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-icons: 4.6.0_react@18.2.0
-  react-knowledge-graph: 0.2.2_nsgh7lqw2e2kb5wanadocemtdi
+  react-knowledge-graph: 0.3.0_nsgh7lqw2e2kb5wanadocemtdi
 
 devDependencies:
   '@types/node': 18.11.8
@@ -1972,8 +1972,8 @@ packages:
     resolution: {integrity: sha512-5nqDSxl8nn5BSNxyR3n4I6eDmbolI6WT+QqR547RwxQapgjQBmtktdP+HTBb/a/zLsbzERTONyUB5pefh5TtjQ==}
     dev: true
 
-  /framer-motion/7.6.1_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-8US03IWJKrLoSb81l5OahNzB9Sv7Jo1RhIwUoTG/25BRUdO9lOqq/klsdZqNmNG0ua9IEJJQ8hkYpETJ4N6VSw==}
+  /framer-motion/7.6.2_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-YRr+KaC+1MlLx7iArVyjZRpc0QXI7H0XIOJrdol+dF1+WLQJwS2sP04KGq808BG+byD36UAmAt4YqObE5YFLtw==}
     peerDependencies:
       react: ^18.0.0
       react-dom: ^18.0.0
@@ -3232,11 +3232,11 @@ packages:
     resolution: {integrity: sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==}
     dev: false
 
-  /react-knowledge-graph/0.2.2_nsgh7lqw2e2kb5wanadocemtdi:
-    resolution: {integrity: sha512-D/AZpibVl3ooiTK0uZabm7T5TQyGhKouIRFuLS+H6C1tNhetLUI6Ux5EWd5UBhVYEvTFnuBYxVY6cC2V4uwhdw==}
+  /react-knowledge-graph/0.3.0_nsgh7lqw2e2kb5wanadocemtdi:
+    resolution: {integrity: sha512-QdL+kT3zhg8vr/WAM8R1W041eXcbkN8a4QIcIxAXEcrSFYcUzu2r1iiA00p1XaQZMuLzS1D8uRhAZ+F1y4yB9A==}
     dependencies:
       '@reduxjs/toolkit': 1.8.6_kuo2ie247izvzll3jejufdtq3q
-      framer-motion: 7.6.1_biqbaboplfbrettd7655fr4n2y
+      framer-motion: 7.6.2_biqbaboplfbrettd7655fr4n2y
       react-icons: 4.6.0_react@18.2.0
       react-redux: 8.0.4_nsgh7lqw2e2kb5wanadocemtdi
     transitivePeerDependencies:
