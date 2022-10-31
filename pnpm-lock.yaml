@@ -25,19 +25,11 @@ dependencies:
   react-copy-to-clipboard: 5.1.0_react@18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-icons: 4.6.0_react@18.2.0
-<<<<<<< HEAD
-  react-knowledge-graph: 0.3.2_afayxugueidi56mitzfqrolb7y
-
-devDependencies:
-  '@types/node': 18.11.5
-  '@types/react': 18.0.21
-=======
   react-knowledge-graph: 0.2.2_nsgh7lqw2e2kb5wanadocemtdi
 
 devDependencies:
   '@types/node': 18.11.8
   '@types/react': 18.0.24
->>>>>>> 473891fb49424e4b26fdfadbff1c5fdae1228511
   '@types/react-copy-to-clipboard': 5.0.4
   '@types/react-dom': 18.0.7
   eslint: 8.25.0
