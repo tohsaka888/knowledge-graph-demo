@@ -8,7 +8,7 @@ specifiers:
   antd: 4.23.6
   eslint: 8.25.0
   eslint-config-next: 13.0.4
-  mongodb: 4.12.0
+  mongodb: 4.13.0
   next: 13.0.4
   react: 18.2.0
   react-copy-to-clipboard: 5.1.0
@@ -19,7 +19,7 @@ specifiers:
 
 dependencies:
   antd: 4.23.6_biqbaboplfbrettd7655fr4n2y
-  mongodb: 4.12.0
+  mongodb: 4.13.0
   next: 13.0.4_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-copy-to-clipboard: 5.1.0_react@18.2.0
@@ -659,6 +659,7 @@ packages:
 
   /@aws-sdk/util-base64-browser/3.188.0:
     resolution: {integrity: sha512-qlH+5NZBLiyKziL335BEPedYxX6j+p7KFRWXvDQox9S+s+gLCayednpK+fteOhBenCcR9fUZOVuAPScy1I8qCg==}
+    deprecated: The package @aws-sdk/util-base64-browser has been renamed to @aws-sdk/util-base64. Please install the renamed package.
     dependencies:
       tslib: 2.4.0
     dev: false
@@ -667,6 +668,7 @@ packages:
   /@aws-sdk/util-base64-node/3.188.0:
     resolution: {integrity: sha512-r1dccRsRjKq+OhVRUfqFiW3sGgZBjHbMeHLbrAs9jrOjU2PTQ8PSzAXLvX/9lmp7YjmX17Qvlsg0NCr1tbB9OA==}
     engines: {node: '>= 12.0.0'}
+    deprecated: The package @aws-sdk/util-base64-node has been renamed to @aws-sdk/util-base64. Please install the renamed package.
     dependencies:
       '@aws-sdk/util-buffer-from': 3.188.0
       tslib: 2.4.0
@@ -2479,8 +2481,8 @@ packages:
       whatwg-url: 11.0.0
     dev: false
 
-  /mongodb/4.12.0:
-    resolution: {integrity: sha512-ssWod7DqVE4faluZESdOqYhV1BI5CQA5c31sr+zxDLJDBX9EA5VJLo8RNSItPTwxExmuGn/T6MbETQWjywNehA==}
+  /mongodb/4.13.0:
+    resolution: {integrity: sha512-+taZ/bV8d1pYuHL4U+gSwkhmDrwkWbH1l4aah4YpmpscMwgFBkufIKxgP/G7m87/NUuQzc2Z75ZTI7ZOyqZLbw==}
     engines: {node: '>=12.9.0'}
     dependencies:
       bson: 4.7.0
