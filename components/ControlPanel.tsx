@@ -44,8 +44,8 @@ function ControlPanel() {
             <div className={styles["form-title"]}>通用配置:</div>
             <Form.Item label={"基础半径"} name={["basicDistence"]}>
               <Slider
-                min={10}
-                max={100}
+                min={30}
+                max={300}
                 onChange={(value) => {
                   startTransition(() => {
                     dispatch({ type: "setBasicDistence", payload: +value });
