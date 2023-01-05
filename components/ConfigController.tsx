@@ -7,7 +7,7 @@ import React, {
 import { ConfigProps } from "react-knowledge-graph";
 
 const initialState: Omit<ConfigProps, "onExploreEnd" | "explore"> = {
-  basicDistence: 30,
+  basicDistence: 100,
   position: { x: 0, y: 0 },
   width: "100vw",
   height: "100vh",
