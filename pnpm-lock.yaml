@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@types/node': 18.11.8
-  '@types/react': 18.0.24
+  '@types/react': 18.0.27
   '@types/react-copy-to-clipboard': 5.0.4
   '@types/react-dom': 18.0.10
   antd: ^5.1.2
@@ -25,11 +25,11 @@ dependencies:
   react-copy-to-clipboard: 5.1.0_react@18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-icons: 4.7.1_react@18.2.0
-  react-knowledge-graph: 0.3.8-fix5_s2beercrfcwgzm7tzhfdldj4la
+  react-knowledge-graph: 0.3.8-fix5_fxtgt6bjwd6p4cwoordejim2zi
 
 devDependencies:
   '@types/node': 18.11.8
-  '@types/react': 18.0.24
+  '@types/react': 18.0.27
   '@types/react-copy-to-clipboard': 5.0.4
   '@types/react-dom': 18.0.10
   eslint: 8.25.0
@@ -1161,7 +1161,7 @@ packages:
     dependencies:
       immer: 9.0.17
       react: 18.2.0
-      react-redux: 8.0.5_s2beercrfcwgzm7tzhfdldj4la
+      react-redux: 8.0.5_fxtgt6bjwd6p4cwoordejim2zi
       redux: 4.2.0
       redux-thunk: 2.4.2_redux@4.2.0
       reselect: 4.1.7
@@ -1180,7 +1180,7 @@ packages:
   /@types/hoist-non-react-statics/3.3.1:
     resolution: {integrity: sha512-iMIqiko6ooLrTh1joXodJK5X9xeEALT1kM5G3ZLhD3hszxBdIEd5C75U834D9mLcINgD4OyZf5uQXjkuYydWvA==}
     dependencies:
-      '@types/react': 18.0.24
+      '@types/react': 18.0.27
       hoist-non-react-statics: 3.3.2
     dev: false
 
@@ -1197,16 +1197,16 @@ packages:
   /@types/react-copy-to-clipboard/5.0.4:
     resolution: {integrity: sha512-otTJsJpofYAeaIeOwV5xBUGpo6exXG2HX7X4nseToCB2VgPEBxGBHCm/FecZ676doNR7HCSTVtmohxfG2b3/yQ==}
     dependencies:
-      '@types/react': 18.0.24
+      '@types/react': 18.0.27
     dev: true
 
   /@types/react-dom/18.0.10:
     resolution: {integrity: sha512-E42GW/JA4Qv15wQdqJq8DL4JhNpB3prJgjgapN3qJT9K2zO5IIAQh4VXvCEDupoqAwnz0cY4RlXeC/ajX5SFHg==}
     dependencies:
-      '@types/react': 18.0.24
+      '@types/react': 18.0.27
 
-  /@types/react/18.0.24:
-    resolution: {integrity: sha512-wRJWT6ouziGUy+9uX0aW4YOJxAY0bG6/AOk5AW5QSvZqI7dk6VBIbXvcVgIw/W5Jrl24f77df98GEKTJGOLx7Q==}
+  /@types/react/18.0.27:
+    resolution: {integrity: sha512-3vtRKHgVxu3Jp9t718R9BuzoD4NcQ8YJ5XRzsSKxNDiDonD2MXIT1TmSkenxuCycZJoQT5d2vE8LwWJxBC1gmA==}
     dependencies:
       '@types/prop-types': 15.7.5
       '@types/scheduler': 0.16.2
@@ -3359,14 +3359,14 @@ packages:
     resolution: {integrity: sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==}
     dev: false
 
-  /react-knowledge-graph/0.3.8-fix5_s2beercrfcwgzm7tzhfdldj4la:
+  /react-knowledge-graph/0.3.8-fix5_fxtgt6bjwd6p4cwoordejim2zi:
     resolution: {integrity: sha512-iKVbLFdbMekVcY2t1tedtyPsTb+WU6bCitc74XBrDs989o+6QUi2DuBp7wTS4safTgs5hfOwu0TR5NB7odk3eQ==}
     dependencies:
       '@reduxjs/toolkit': 1.9.1_k4ae6lp43ej6mezo3ztvx6pykq
       framer-motion: 8.1.6_biqbaboplfbrettd7655fr4n2y
       lodash.uniqby: 4.7.0
       react-icons: 4.7.1_react@18.2.0
-      react-redux: 8.0.5_s2beercrfcwgzm7tzhfdldj4la
+      react-redux: 8.0.5_fxtgt6bjwd6p4cwoordejim2zi
     transitivePeerDependencies:
       - '@types/react'
       - '@types/react-dom'
@@ -3376,7 +3376,7 @@ packages:
       - redux
     dev: false
 
-  /react-redux/8.0.5_s2beercrfcwgzm7tzhfdldj4la:
+  /react-redux/8.0.5_fxtgt6bjwd6p4cwoordejim2zi:
     resolution: {integrity: sha512-Q2f6fCKxPFpkXt1qNRZdEDLlScsDWyrgSj0mliK59qU6W5gvBiKkdMEG2lJzhd1rCctf0hb6EtePPLZ2e0m1uw==}
     peerDependencies:
       '@types/react': ^16.8 || ^17.0 || ^18.0
@@ -3399,7 +3399,7 @@ packages:
     dependencies:
       '@babel/runtime': 7.20.7
       '@types/hoist-non-react-statics': 3.3.1
-      '@types/react': 18.0.24
+      '@types/react': 18.0.27
       '@types/react-dom': 18.0.10
       '@types/use-sync-external-store': 0.0.3
       hoist-non-react-statics: 3.3.2
