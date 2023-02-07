@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "antd": "^5.1.2",
-    "mongodb": "5.0.0",
+    "mongodb": "5.0.1",
     "next": "13.1.6",
     "react": "18.2.0",
     "react-copy-to-clipboard": "5.1.0",
