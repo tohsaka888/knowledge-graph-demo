@@ -8,7 +8,7 @@ specifiers:
   antd: ^5.1.2
   eslint: 8.33.0
   eslint-config-next: 13.1.6
-  mongodb: 5.0.0
+  mongodb: 5.0.1
   next: 13.1.6
   react: 18.2.0
   react-copy-to-clipboard: 5.1.0
@@ -19,7 +19,7 @@ specifiers:
 
 dependencies:
   antd: 5.1.2_biqbaboplfbrettd7655fr4n2y
-  mongodb: 5.0.0
+  mongodb: 5.0.1
   next: 13.1.6_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-copy-to-clipboard: 5.1.0_react@18.2.0
@@ -1783,8 +1783,8 @@ packages:
       whatwg-url: 11.0.0
     dev: false
 
-  /mongodb/5.0.0:
-    resolution: {integrity: sha512-WHmlbefKp/iAX2LlSZ56iKt4pRftib/dD3mDaji8R7IJcRoKPc5+/kSn3mIBxKPLVxcl73KdDKBLkQTxj1OjaA==}
+  /mongodb/5.0.1:
+    resolution: {integrity: sha512-KpjtY+NWFmcic6UDYEdfn768ZTuKyv7CRaui7ZSd6q/0/o1AURMC7KygTUwB1Cl8V10Pe5NiP+Y2eBMCDs/ygQ==}
     engines: {node: '>=14.20.1'}
     peerDependencies:
       '@aws-sdk/credential-providers': ^3.201.0
