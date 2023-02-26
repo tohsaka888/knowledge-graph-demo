@@ -1,1 +1,1 @@
-export const baseUrl = "https://react-knowledge-graph.vercel.app";
+export const baseUrl = "https://react-knowledge-graph.tohsaka888.asia";

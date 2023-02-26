@@ -1,4 +1,4 @@
-import { Drawer, Form, Input, Slider } from "antd";
+import { Drawer, Form, Input, Select, Slider } from "antd";
 import React, { startTransition, useContext, useState } from "react";
 import { BsFillGearFill } from "react-icons/bs";
 import { ConfigContext } from "./ConfigController";
@@ -95,6 +95,31 @@ function ControlPanel() {
                 onChange={(e) => {
                   startTransition(() => {
                     dispatch({ type: "setStroke", payload: e.target.value });
+                  });
+                }}
+              />
+            </Form.Item>
+            <Form.Item
+              label={"飞线效果"}
+              name={["edgeConfig", "flyLineEffect"]}
+            >
+              <Select
+                options={[
+                  {
+                    value: "arrow",
+                    key: "arrow",
+                  },
+                  {
+                    value: "line",
+                    key: "line",
+                  },
+                ]}
+                onChange={(value) => {
+                  startTransition(() => {
+                    dispatch({
+                      type: "setFlyLineEffect",
+                      payload: value,
+                    });
                   });
                 }}
               />

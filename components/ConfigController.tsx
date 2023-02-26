@@ -22,6 +22,7 @@ const initialState: Omit<ConfigProps, "onExploreEnd" | "explore"> = {
     hoveredColor: "#e27272",
     stroke: "#DEDEDE",
     strokeWidth: 1,
+    flyLineEffect: "arrow",
   },
   typeConfig: {
     根节点: {
@@ -68,6 +69,7 @@ type ActionType =
   | { type: "setBasicDistence"; payload: number }
   | { type: "setStrokeWidth"; payload: number }
   | { type: "setStroke"; payload: string }
+  | { type: "setFlyLineEffect"; payload: "line" | "arrow" }
   | {
       type: "setTypeConfig";
       payload: {
@@ -93,6 +95,14 @@ function reducer(
           stroke: state.edgeConfig?.stroke,
           strokeWidth: action.payload,
         },
+      };
+    case "setFlyLineEffect":
+      return {
+        ...state,
+        edgeConfig: {
+          ...state.edgeConfig,
+          flyLineEffect: action.payload,
+        }
       };
     case "setStroke":
       return {

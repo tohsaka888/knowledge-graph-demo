@@ -26,14 +26,16 @@ const KnowledgeGraphCanvas = React.memo(
     };
 
     const explore = async (id: string) => {
-      const inside = await getNode(id, "inside");
-      const outside = await getNode(id, "outside");
-      const edges = await getEdge(id);
+      const data = await Promise.all([
+        getNode(id, "inside"),
+        getNode(id, "outside"),
+        getEdge(id),
+      ]);
 
       return {
-        edges,
-        inside,
-        outside,
+        inside: data[0],
+        outside: data[1],
+        edges: data[2],
       };
     };
 
