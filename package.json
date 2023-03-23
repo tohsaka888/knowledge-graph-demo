@@ -19,7 +19,7 @@
     "react-knowledge-graph": "0.3.8-fix5"
   },
   "devDependencies": {
-    "@types/node": "18.15.3",
+    "@types/node": "18.15.5",
     "@types/react": "18.0.28",
     "@types/react-copy-to-clipboard": "5.0.4",
     "@types/react-dom": "18.0.11",
