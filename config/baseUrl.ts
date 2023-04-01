@@ -1,1 +1,1 @@
-export const baseUrl = "https://react-knowledge-graph.tohsaka888.asia";
+export const baseUrl = "https://knowledge-graph-demo.tohsaka888.asia";
