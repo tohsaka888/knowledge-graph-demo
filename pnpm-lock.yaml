@@ -26,8 +26,8 @@ dependencies:
     specifier: 4.8.0
     version: 4.8.0(react@18.2.0)
   react-knowledge-graph:
-    specifier: 0.3.10
-    version: 0.3.10(@types/react-dom@18.2.4)(@types/react@18.2.6)(react-dom@18.2.0)(react@18.2.0)(redux@4.2.1)
+    specifier: ^0.3.11
+    version: 0.3.11(@types/react-dom@18.2.4)(@types/react@18.2.6)(react-dom@18.2.0)(react@18.2.0)(redux@4.2.1)
 
 devDependencies:
   '@types/node':
@@ -724,8 +724,8 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /caniuse-lite@1.0.30001418:
-    resolution: {integrity: sha512-oIs7+JL3K9JRQ3jPZjlH6qyYDp+nBTCais7hjh0s+fuBwufc7uZ7hPYMXrDOJhV360KGMTcczMRObk0/iMqZRg==}
+  /caniuse-lite@1.0.30001487:
+    resolution: {integrity: sha512-83564Z3yWGqXsh2vaH/mhXfEM0wX+NlBCm1jYHOb97TrTWJEmPTccZgeLTPBUUb0PNVo+oomb7wkimZBIERClA==}
     dev: false
 
   /chalk@4.1.2:
@@ -1259,8 +1259,8 @@ packages:
     resolution: {integrity: sha512-5nqDSxl8nn5BSNxyR3n4I6eDmbolI6WT+QqR547RwxQapgjQBmtktdP+HTBb/a/zLsbzERTONyUB5pefh5TtjQ==}
     dev: true
 
-  /framer-motion@10.12.4(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-9gLtv8T6dui0tujHROR+VM3kdJyKiFCFiD94IQE+0OuX6LaIyXtdVpviokVdrHSb1giWhmmX4yzoucALMx6mtw==}
+  /framer-motion@10.12.10(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-f/VkrpxfG4xSmBi105/NCfcTt219IgglQEUR0BsuFZAg+be6N3QAcujFyBEvBvbDOSP9Ccv6OMiaY0HFMnBoMA==}
     peerDependencies:
       react: ^18.0.0
       react-dom: ^18.0.0
@@ -1796,7 +1796,7 @@ packages:
       '@next/env': 13.3.2
       '@swc/helpers': 0.5.1
       busboy: 1.6.0
-      caniuse-lite: 1.0.30001418
+      caniuse-lite: 1.0.30001487
       postcss: 8.4.14
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -2562,11 +2562,11 @@ packages:
     resolution: {integrity: sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==}
     dev: false
 
-  /react-knowledge-graph@0.3.10(@types/react-dom@18.2.4)(@types/react@18.2.6)(react-dom@18.2.0)(react@18.2.0)(redux@4.2.1):
-    resolution: {integrity: sha512-5i9vxKwbuOs+oaCYz9JE0p0ctJV5j7FUkl9jtVWHj1661Tb8I0k1cR4JmpVQ9ZvG8RxZMwec0bS/noTUTIn1aQ==}
+  /react-knowledge-graph@0.3.11(@types/react-dom@18.2.4)(@types/react@18.2.6)(react-dom@18.2.0)(react@18.2.0)(redux@4.2.1):
+    resolution: {integrity: sha512-xInk1nDzliNNRsMjeX5u1Kg/yYGiJLDzFGrvgIp+y/Xm+EM0RCIXYzDIrUBfeD4f3I9uwONcegfUsGMzFvg9jQ==}
     dependencies:
       '@reduxjs/toolkit': 1.9.5(react-redux@8.0.5)(react@18.2.0)
-      framer-motion: 10.12.4(react-dom@18.2.0)(react@18.2.0)
+      framer-motion: 10.12.10(react-dom@18.2.0)(react@18.2.0)
       lodash.uniqby: 4.7.0
       react-icons: 4.8.0(react@18.2.0)
       react-redux: 8.0.5(@types/react-dom@18.2.4)(@types/react@18.2.6)(react-dom@18.2.0)(react@18.2.0)(redux@4.2.1)
