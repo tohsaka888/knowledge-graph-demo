@@ -23,6 +23,8 @@ const initialState: Omit<ConfigProps, "onExploreEnd" | "explore"> = {
     stroke: "#DEDEDE",
     strokeWidth: 1,
     flyLineEffect: "arrow",
+    descriptionColor: "#DEDEDE",
+    descriptionSize: 10,
   },
   typeConfig: {
     根节点: {

@@ -155,28 +155,6 @@ function ControlPanel() {
                 }}
               />
             </Form.Item>
-            {/* <Form.Item label={"优化方案"} name={"dragRenderOptimization"}>
-              <Select
-                options={[
-                  {
-                    value: "react",
-                    key: "react",
-                  },
-                  {
-                    value: "dom",
-                    key: "dom",
-                  },
-                ]}
-                onChange={(value) => {
-                  startTransition(() => {
-                    dispatch({
-                      type: "setDragRenderOptimization",
-                      payload: value,
-                    });
-                  });
-                }}
-              />
-            </Form.Item> */}
             <Form.Item
               label={"飞线效果"}
               name={["edgeConfig", "flyLineEffect"]}

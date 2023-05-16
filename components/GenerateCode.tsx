@@ -8,10 +8,43 @@ function GenerateCode() {
   const knowledgeGraphCode = useMemo(() => {
     return `
       <KnowledgeGraph
-        explore={() => {}}
-        onExploreEnd={() => {}}       
+        width={"100vw"}
+        height={"100vh"}
+        showFilter={false}
+        showHelper={false}
+        explore={async (id) => {
+          const getNode = async (
+            id: string,
+            direction: "inside" | "outside"
+          ) => {
+            const res = await fetch(
+              \`https://knowledge-graph-demo.tohsaka888.asia/api/\${direction}/\${id}\`
+            );
+            const data = await res.json();
+            return data;
+          };
+          const getEdge = async (id: string) => {
+            const res = await fetch(
+              \`https://knowledge-graph-demo.tohsaka888.asia/api/edge/\${id}\`
+            );
+            const data = await res.json();
+            return data;
+          };
+          const data = await Promise.all([
+            getNode(id, "inside"),
+            getNode(id, "outside"),
+            getEdge(id),
+          ]);
+          return {
+            inside: data[0],
+            outside: data[1],
+            edges: data[2],
+          };
+        }}
+        onExploreEnd={() => {
+          alert("over!!");
+        }}       
         basicDistence={${config.basicDistence}}
-        dragRenderOptimization={${config.dragRenderOptimization}}
         position={{
           x: ${config.position.x},
           y: ${config.position.y}
@@ -25,11 +58,11 @@ function GenerateCode() {
         }}
         edgeConfig={{
           stroke: "${config.edgeConfig?.stroke || ""}",
-          strokeWidth: ${config.edgeConfig?.strokeWidth || 1}
-          flyLineEffect: ${config.edgeConfig?.flyLineEffect}
-          descriptionSize: ${config.edgeConfig?.descriptionSize}
-          descriptionColor: ${config.edgeConfig?.descriptionColor}
-          hoveredColor: ${config.edgeConfig?.hoveredColor}
+          strokeWidth: ${config.edgeConfig?.strokeWidth || 1},
+          flyLineEffect: "${config.edgeConfig?.flyLineEffect}",
+          descriptionSize: ${config.edgeConfig?.descriptionSize},
+          descriptionColor: "${config.edgeConfig?.descriptionColor}",
+          hoveredColor: "${config.edgeConfig?.hoveredColor}",
         }}
         typeConfig={{
           根节点: {
