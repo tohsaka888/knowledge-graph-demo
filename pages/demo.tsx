@@ -1,13 +1,12 @@
 import React from "react";
 import { KnowledgeGraph } from "react-knowledge-graph";
+import "react-knowledge-graph/KnowledgeGraph/index.css";
 
 function Demo() {
   return (
     <KnowledgeGraph
       width={"100vw"}
       height={"100vh"}
-      showFilter={false}
-      showHelper={false}
       explore={async (id) => {
         const getNode = async (id: string, direction: "inside" | "outside") => {
           const res = await fetch(

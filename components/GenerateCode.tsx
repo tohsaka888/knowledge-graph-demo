@@ -10,8 +10,6 @@ function GenerateCode() {
       <KnowledgeGraph
         width={"100vw"}
         height={"100vh"}
-        showFilter={false}
-        showHelper={false}
         explore={async (id) => {
           const getNode = async (
             id: string,
@@ -106,19 +104,38 @@ function GenerateCode() {
     `;
   }, [config]);
   return (
-    <CopyToClipboard
-      text={knowledgeGraphCode}
-      onCopy={() => {
-        message.success({
-          content: "复制成功!",
-          key: "copy_success",
-        });
-      }}
-    >
-      <Button type={"primary"} style={{ width: "100%" }}>
-        生成代码
-      </Button>
-    </CopyToClipboard>
+    <>
+      <CopyToClipboard
+        text={`import "react-knowledge-graph/KnowledgeGraph/index.css";`}
+        onCopy={() => {
+          message.success({
+            content: "复制成功!",
+            key: "copy_success",
+          });
+        }}
+      >
+        <Button
+          type={"primary"}
+          danger
+          style={{ width: "100%", marginBottom: "16px" }}
+        >
+          导入样式文件
+        </Button>
+      </CopyToClipboard>
+      <CopyToClipboard
+        text={knowledgeGraphCode}
+        onCopy={() => {
+          message.success({
+            content: "复制成功!",
+            key: "copy_success",
+          });
+        }}
+      >
+        <Button type={"primary"} style={{ width: "100%" }}>
+          生成代码
+        </Button>
+      </CopyToClipboard>
+    </>
   );
 }
 
