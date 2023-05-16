@@ -4,7 +4,7 @@ import React, {
   useDeferredValue,
   useReducer,
 } from "react";
-import { ConfigProps } from "react-knowledge-graph";
+import { ConfigProps, EdgeConfig } from "react-knowledge-graph";
 
 const initialState: Omit<ConfigProps, "onExploreEnd" | "explore"> = {
   basicDistence: 100,
@@ -67,9 +67,8 @@ const initialState: Omit<ConfigProps, "onExploreEnd" | "explore"> = {
 type ActionType =
   | { type: "setPosition"; payload: { x: number; y: number } }
   | { type: "setBasicDistence"; payload: number }
-  | { type: "setStrokeWidth"; payload: number }
-  | { type: "setStroke"; payload: string }
-  | { type: "setFlyLineEffect"; payload: "line" | "arrow" }
+  | { type: "setDragRenderOptimization"; payload: "react" | "dom" | undefined }
+  | { type: "setEdgeConfig"; payload: EdgeConfig }
   | {
       type: "setTypeConfig";
       payload: {
@@ -88,30 +87,10 @@ function reducer(
       return { ...state, basicDistence: action.payload };
     case "setPosition":
       return { ...state, position: action.payload };
-    case "setStrokeWidth":
-      return {
-        ...state,
-        edgeConfig: {
-          stroke: state.edgeConfig?.stroke,
-          strokeWidth: action.payload,
-        },
-      };
-    case "setFlyLineEffect":
-      return {
-        ...state,
-        edgeConfig: {
-          ...state.edgeConfig,
-          flyLineEffect: action.payload,
-        }
-      };
-    case "setStroke":
-      return {
-        ...state,
-        edgeConfig: {
-          ...state.edgeConfig,
-          stroke: action.payload,
-        },
-      };
+    case "setDragRenderOptimization":
+      return { ...state, dragRenderOptimization: action.payload };
+    case "setEdgeConfig":
+      return { ...state, edgeConfig: action.payload };
     case "setTypeConfig":
       const { type, option, value } = action.payload;
       return {
@@ -124,6 +103,7 @@ function reducer(
           },
         },
       };
+
     default:
       return initialState;
   }

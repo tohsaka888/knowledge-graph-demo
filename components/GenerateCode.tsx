@@ -9,8 +9,9 @@ function GenerateCode() {
     return `
       <KnowledgeGraph
         explore={() => {}}
-        onExploreEnd={() => {}}
+        onExploreEnd={() => {}}       
         basicDistence={${config.basicDistence}}
+        dragRenderOptimization={${config.dragRenderOptimization}}
         position={{
           x: ${config.position.x},
           y: ${config.position.y}
@@ -25,6 +26,10 @@ function GenerateCode() {
         edgeConfig={{
           stroke: "${config.edgeConfig?.stroke || ""}",
           strokeWidth: ${config.edgeConfig?.strokeWidth || 1}
+          flyLineEffect: ${config.edgeConfig?.flyLineEffect}
+          descriptionSize: ${config.edgeConfig?.descriptionSize}
+          descriptionColor: ${config.edgeConfig?.descriptionColor}
+          hoveredColor: ${config.edgeConfig?.hoveredColor}
         }}
         typeConfig={{
           根节点: {
@@ -66,14 +71,7 @@ function GenerateCode() {
         }}
       />
     `;
-  }, [
-    config.basicDistence,
-    config.edgeConfig?.stroke,
-    config.edgeConfig?.strokeWidth,
-    config.position.x,
-    config.position.y,
-    config.typeConfig,
-  ]);
+  }, [config]);
   return (
     <CopyToClipboard
       text={knowledgeGraphCode}

@@ -84,7 +84,13 @@ function ControlPanel() {
                 step={0.01}
                 onChange={(value) => {
                   startTransition(() => {
-                    dispatch({ type: "setStrokeWidth", payload: +value });
+                    dispatch({
+                      type: "setEdgeConfig",
+                      payload: {
+                        ...config.edgeConfig,
+                        strokeWidth: +value,
+                      },
+                    });
                   });
                 }}
               />
@@ -94,11 +100,83 @@ function ControlPanel() {
                 type={"color"}
                 onChange={(e) => {
                   startTransition(() => {
-                    dispatch({ type: "setStroke", payload: e.target.value });
+                    dispatch({
+                      type: "setEdgeConfig",
+                      payload: { ...config.edgeConfig, stroke: e.target.value },
+                    });
                   });
                 }}
               />
             </Form.Item>
+            <Form.Item
+              label={"描述字体大小"}
+              name={["edgeConfig", "descriptionSize"]}
+            >
+              <Slider
+                min={8}
+                max={30}
+                step={1}
+                onChange={(value) => {
+                  startTransition(() => {
+                    dispatch({
+                      type: "setEdgeConfig",
+                      payload: {
+                        ...config.edgeConfig,
+                        descriptionSize: +value,
+                      },
+                    });
+                  });
+                }}
+              />
+            </Form.Item>
+            <Form.Item label={"描述字体颜色"} name={["edgeConfig", "descriptionColor"]}>
+              <Input
+                type={"color"}
+                onChange={(e) => {
+                  startTransition(() => {
+                    dispatch({
+                      type: "setEdgeConfig",
+                      payload: { ...config.edgeConfig, descriptionColor: e.target.value },
+                    });
+                  });
+                }}
+              />
+            </Form.Item>
+            <Form.Item label={"边高亮颜色"} name={["edgeConfig", "hoveredColor"]}>
+              <Input
+                type={"color"}
+                onChange={(e) => {
+                  startTransition(() => {
+                    dispatch({
+                      type: "setEdgeConfig",
+                      payload: { ...config.edgeConfig, hoveredColor: e.target.value },
+                    });
+                  });
+                }}
+              />
+            </Form.Item>
+            {/* <Form.Item label={"优化方案"} name={"dragRenderOptimization"}>
+              <Select
+                options={[
+                  {
+                    value: "react",
+                    key: "react",
+                  },
+                  {
+                    value: "dom",
+                    key: "dom",
+                  },
+                ]}
+                onChange={(value) => {
+                  startTransition(() => {
+                    dispatch({
+                      type: "setDragRenderOptimization",
+                      payload: value,
+                    });
+                  });
+                }}
+              />
+            </Form.Item> */}
             <Form.Item
               label={"飞线效果"}
               name={["edgeConfig", "flyLineEffect"]}
@@ -117,8 +195,8 @@ function ControlPanel() {
                 onChange={(value) => {
                   startTransition(() => {
                     dispatch({
-                      type: "setFlyLineEffect",
-                      payload: value,
+                      type: "setEdgeConfig",
+                      payload: { ...config.edgeConfig, flyLineEffect: value },
                     });
                   });
                 }}
