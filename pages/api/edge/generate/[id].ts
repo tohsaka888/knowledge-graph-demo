@@ -1,4 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from "next";
+import nextCors from "next-cors";
 import { createEdgeFakeData } from "utils/client/createEdgeFakeData";
 import { connectDB } from "utils/server/connectDB";
 
@@ -7,6 +8,7 @@ export default async function handler(
   res: NextApiResponse
 ) {
   try {
+    await nextCors(req, res);
     const db = await connectDB();
     const id = req.query.id as string;
     const insideLength = req.query.insideLength as string;
