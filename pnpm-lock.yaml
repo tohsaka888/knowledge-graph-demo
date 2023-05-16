@@ -13,6 +13,9 @@ dependencies:
   next:
     specifier: 13.3.2
     version: 13.3.2(react-dom@18.2.0)(react@18.2.0)
+  next-cors:
+    specifier: ^1.0.0
+    version: 1.0.0(next@13.3.2)
   react:
     specifier: 18.2.0
     version: 18.2.0
@@ -773,6 +776,14 @@ packages:
     resolution: {integrity: sha512-oml3M22pHM+igfWHDfdLVq2ShWmjM2V4L+dQEBs0DWVIqEm9WHCwGAlZ6BmyBQGy5sFrJmcx+856D9lVKyGWYg==}
     requiresBuild: true
     dev: true
+
+  /cors@2.8.5:
+    resolution: {integrity: sha512-KIHbLJqu73RGr/hnbrO9uBeixNGuvSQjul/jdFvS/KFSIH1hWVd1ng7zOHx+YrEfInLG7q4n6GHQ9cDtxv/P6g==}
+    engines: {node: '>= 0.10'}
+    dependencies:
+      object-assign: 4.1.1
+      vary: 1.1.2
+    dev: false
 
   /cross-spawn@7.0.3:
     resolution: {integrity: sha512-iRDPJKUPVEND7dHPO8rkbOnPpyDygcDFtWjpeWNCgy8WP2rXcxXL8TskReQl6OrB2G7+UJrags1q15Fudc7G6w==}
@@ -1771,6 +1782,15 @@ packages:
   /natural-compare@1.4.0:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
     dev: true
+
+  /next-cors@1.0.0(next@13.3.2):
+    resolution: {integrity: sha512-WMW9sRL45Pe+EiL1/f/czaWmq8hqyQ5NLLQqvfrGwfxGdcB76PWQ7nsPNgujUL4rRLZx4lsOnINaQ3hZ5ZPnZw==}
+    peerDependencies:
+      next: '>=12.0.0'
+    dependencies:
+      cors: 2.8.5
+      next: 13.3.2(react-dom@18.2.0)(react@18.2.0)
+    dev: false
 
   /next@13.3.2(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-82VuWoMGWFqGUwCEWcqkIhGgdRry+VKVBZ9KNte1Uk2byZKvPZrC5c62fYHrIhSf36YKY6m21hxdyDzn6MDHFA==}
@@ -2996,6 +3016,11 @@ packages:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
     dependencies:
       react: 18.2.0
+    dev: false
+
+  /vary@1.1.2:
+    resolution: {integrity: sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==}
+    engines: {node: '>= 0.8'}
     dev: false
 
   /webidl-conversions@7.0.0:
