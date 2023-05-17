@@ -29,8 +29,8 @@ dependencies:
     specifier: 4.8.0
     version: 4.8.0(react@18.2.0)
   react-knowledge-graph:
-    specifier: ^0.3.11
-    version: 0.3.11(@types/react-dom@18.2.4)(@types/react@18.2.6)(react-dom@18.2.0)(react@18.2.0)(redux@4.2.1)
+    specifier: ^0.3.12
+    version: 0.3.12(@types/react-dom@18.2.4)(@types/react@18.2.6)(react-dom@18.2.0)(react@18.2.0)(redux@4.2.1)
 
 devDependencies:
   '@types/node':
@@ -2582,8 +2582,8 @@ packages:
     resolution: {integrity: sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==}
     dev: false
 
-  /react-knowledge-graph@0.3.11(@types/react-dom@18.2.4)(@types/react@18.2.6)(react-dom@18.2.0)(react@18.2.0)(redux@4.2.1):
-    resolution: {integrity: sha512-xInk1nDzliNNRsMjeX5u1Kg/yYGiJLDzFGrvgIp+y/Xm+EM0RCIXYzDIrUBfeD4f3I9uwONcegfUsGMzFvg9jQ==}
+  /react-knowledge-graph@0.3.12(@types/react-dom@18.2.4)(@types/react@18.2.6)(react-dom@18.2.0)(react@18.2.0)(redux@4.2.1):
+    resolution: {integrity: sha512-ldwuPrxRqQcgw92+V0d2hApIxRwx/GHwEkdW0M1Y/zFexz1D+L3oK46jwcmJx1cJWOEZDPh+uMbmC0yXCvQjJA==}
     dependencies:
       '@reduxjs/toolkit': 1.9.5(react-redux@8.0.5)(react@18.2.0)
       framer-motion: 10.12.10(react-dom@18.2.0)(react@18.2.0)
