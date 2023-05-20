@@ -1,0 +1,109 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Next Swagger API Example",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/edge/{id}": {
+      "get": {
+        "tags": [
+          "Edges"
+        ],
+        "description": "获取边数据",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "父节点Id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "成功，返回数据"
+          }
+        }
+      }
+    },
+    "/api/inside/{id}": {
+      "get": {
+        "tags": [
+          "Nodes"
+        ],
+        "description": "获取入边节点数据",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "父节点Id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "成功，返回数据"
+          }
+        }
+      }
+    },
+    "/api/outside/{id}": {
+      "get": {
+        "tags": [
+          "Nodes"
+        ],
+        "description": "获取出边节点数据",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "description": "父节点Id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "成功，返回数据"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Nodes": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "hasMore": {
+            "type": "boolean"
+          },
+          "direction": {
+            "type": "string"
+          },
+          "parentId": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "tags": []
+}
