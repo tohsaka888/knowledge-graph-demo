@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next-swagger-doc-cli next-swagger-doc.json",
     "start": "next start",
     "lint": "next lint"
   },
@@ -14,17 +14,20 @@
     "mongodb": "5.5.0",
     "next": "13.3.2",
     "next-cors": "^1.0.0",
+    "next-swagger-doc": "^0.3.6",
     "react": "18.2.0",
     "react-copy-to-clipboard": "5.1.0",
     "react-dom": "18.2.0",
     "react-icons": "4.8.0",
-    "react-knowledge-graph": "^0.3.12"
+    "react-knowledge-graph": "^0.3.12",
+    "swagger-ui-react": "^4.18.3"
   },
   "devDependencies": {
     "@types/node": "18.16.9",
     "@types/react": "18.2.6",
     "@types/react-copy-to-clipboard": "5.0.4",
     "@types/react-dom": "18.2.4",
+    "@types/swagger-ui-react": "^4.18.0",
     "eslint": "8.40.0",
     "eslint-config-next": "13.3.2",
     "typescript": "5.0.4"
