@@ -3,6 +3,55 @@ import nextCors from "next-cors";
 import { createNodeFakeData } from "utils/client/createNodeFakeData";
 import { connectDB } from "utils/server/connectDB";
 
+/**
+ * @swagger
+ * /api/node/generate/{id}:
+ *   get:
+ *     tags: [Generate]
+ *     description: 生成节点数据
+ *     parameters:
+ *     - in: path
+ *       name: id
+ *       description: 父节点Id
+ *       required: true
+ *       schema:
+ *         type: string
+ *     - in: query
+ *       name: insideLength
+ *       description: 入边节点长度
+ *       required: true
+ *       schema:
+ *         type: integer
+*     - in: query
+ *       name: outsideLength
+ *       description: 出边节点长度
+ *       required: true
+ *       schema:
+ *         type: integer
+ *     responses:
+ *       200:
+ *         description: 成功，返回数据
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: array
+ *               items:
+ *                 type: object
+ *                 properties:
+ *                   id:
+ *                     type: string
+ *                   type:
+ *                     type: string
+ *                   direction:
+ *                     type: string
+ *                   name:
+ *                     type: string
+ *                   parentId:
+ *                     type: string
+ *                   hasMore:
+ *                     type: boolean
+ */
+
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse

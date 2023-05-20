@@ -3,6 +3,51 @@ import nextCors from "next-cors";
 import { createEdgeFakeData } from "utils/client/createEdgeFakeData";
 import { connectDB } from "utils/server/connectDB";
 
+/**
+ * @swagger
+ * /api/edge/generate/{id}:
+ *   get:
+ *     tags: [Generate]
+ *     description: 生成边数据
+ *     parameters:
+ *     - in: path
+ *       name: id
+ *       description: 父节点Id
+ *       required: true
+ *       schema:
+ *         type: string
+ *     - in: query
+ *       name: insideLength
+ *       description: 入边节点长度
+ *       required: true
+ *       schema:
+ *         type: integer
+ *     - in: query
+ *       name: outsideLength
+ *       description: 出边节点长度
+ *       required: true
+ *       schema:
+ *         type: integer
+ *     responses:
+ *       200:
+ *         description: 成功，返回数据
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: array
+ *               items:
+ *                 type: object
+ *                 properties:
+ *                   id:
+ *                     type: string
+ *                   fromId:
+ *                     type: string
+ *                   toId:
+ *                     type: string
+ *                   description:
+ *                     type: string
+ */
+
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
@@ -33,14 +78,12 @@ export default async function handler(
       length: +outsideLength,
       edgeLastId: lastEdgeId + +insideLength,
     });
-    collection.insertMany([...insdieEdgeFakeData, ...outsideEdgeFakeData])
+    collection.insertMany([...insdieEdgeFakeData, ...outsideEdgeFakeData]);
     if (db) {
-      res
-        .status(200)
-        .send({
-          insideEdges: insdieEdgeFakeData,
-          outsideEdges: outsideEdgeFakeData,
-        });
+      res.status(200).send({
+        insideEdges: insdieEdgeFakeData,
+        outsideEdges: outsideEdgeFakeData,
+      });
     }
   } catch (error) {
     res.status(200).send([]);
