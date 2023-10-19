@@ -50,8 +50,8 @@ devDependencies:
     specifier: 18.2.28
     version: 18.2.28
   '@types/react-copy-to-clipboard':
-    specifier: 5.0.5
-    version: 5.0.5
+    specifier: 5.0.6
+    version: 5.0.6
   '@types/react-dom':
     specifier: 18.2.13
     version: 18.2.13
@@ -815,8 +815,8 @@ packages:
       types-ramda: 0.29.3
     dev: false
 
-  /@types/react-copy-to-clipboard@5.0.5:
-    resolution: {integrity: sha512-en3JGqPA4RX4aUlo6q6uUbnqLp31Dhm2E/thiMvFTIvU+dUDG249jBG2MJ0rPMXE/MbKVrpmi/1r1G4QLhIHKQ==}
+  /@types/react-copy-to-clipboard@5.0.6:
+    resolution: {integrity: sha512-x347Gy+ZG2dCMiWEHRwiIJ4uMlTmxW7yheRMSQbNf0mFkmXhnYE5nvRdt6SbnT6Z2dp7KPIr3CSvBgSiTIr9zw==}
     dependencies:
       '@types/react': 18.2.28
     dev: true
