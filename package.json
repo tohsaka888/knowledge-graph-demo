@@ -19,7 +19,7 @@
     "react-copy-to-clipboard": "5.1.0",
     "react-dom": "18.2.0",
     "react-icons": "4.12.0",
-    "react-knowledge-graph": "^0.3.13",
+    "react-knowledge-graph": "^0.3.14",
     "swagger-ui-react": "^5.0.0"
   },
   "devDependencies": {
