@@ -23,7 +23,7 @@
     "swagger-ui-react": "^5.0.0"
   },
   "devDependencies": {
-    "@types/node": "20.11.20",
+    "@types/node": "20.11.21",
     "@types/react": "18.2.59",
     "@types/react-copy-to-clipboard": "5.0.7",
     "@types/react-dom": "18.2.19",
