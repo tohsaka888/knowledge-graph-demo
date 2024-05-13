@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "@types/node": "20.12.11",
-    "@types/react": "18.3.1",
+    "@types/react": "18.3.2",
     "@types/react-copy-to-clipboard": "5.0.7",
     "@types/react-dom": "18.3.0",
     "@types/swagger-ui-react": "^4.18.0",
