@@ -1,1 +1,1 @@
-export const baseUrl = "https://knowledge-graph-demo.tohsaka888.asia";
+export const baseUrl = "https://knowledge-graph-demo.vercel.app";
