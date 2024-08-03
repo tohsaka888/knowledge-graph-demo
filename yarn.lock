@@ -3647,9 +3647,9 @@ react-is@^18.2.0:
   integrity sha512-/LLMVyas0ljjAtoYiPqYiL8VWXzUUdThrmU5+n20DZv+a+ClRoevUzw5JxU+Ieh5/c87ytoTBV9G1FiKfNJdmg==
 
 react-knowledge-graph@^0.3.15:
-  version "0.3.15"
-  resolved "https://registry.yarnpkg.com/react-knowledge-graph/-/react-knowledge-graph-0.3.15.tgz#c5fddee1c378f518aa8f0c0cfac0d5f0c24f45d7"
-  integrity sha512-WxU1DU87gWS4ZtSXD/v72aAfZsDvlluqZF3xnaFEHq1730gQEp7BCuGoAiUJbIE3qwCp0vlVq59qAxx+piu8nw==
+  version "0.3.17"
+  resolved "https://registry.yarnpkg.com/react-knowledge-graph/-/react-knowledge-graph-0.3.17.tgz#4b1db167326713b6d74c42e20195dd54bbd0b54b"
+  integrity sha512-WVAkljRNhoI96FGthqZOFrMPUCGUh+bf+XYvtAVXZz63WV+aYext8ipl5AQiZZX4iBSdXvq05SsIc/LbappKvA==
   dependencies:
     "@reduxjs/toolkit" "^2.0.0"
     framer-motion "11.3.19"
