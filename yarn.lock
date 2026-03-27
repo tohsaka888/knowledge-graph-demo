@@ -3598,6 +3598,14 @@ react-copy-to-clipboard@5.1.0:
     copy-to-clipboard "^3.3.1"
     prop-types "^15.8.1"
 
+react-copy-to-clipboard@5.1.1:
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/react-copy-to-clipboard/-/react-copy-to-clipboard-5.1.1.tgz#76adb8be03616e99692fcf3f762365ed3fb5ff16"
+  integrity sha512-s+HrzLyJBxrpGTYXF15dTgMjAJpEPZT/Yp6NytAtZMRngejxt6Pt5WrfFxLAcsqUDU6sY1Jz6tyHwIicE1U2Xg==
+  dependencies:
+    copy-to-clipboard "^3.3.3"
+    prop-types "^15.8.1"
+
 react-debounce-input@=3.3.0:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/react-debounce-input/-/react-debounce-input-3.3.0.tgz#85e3ebcaa41f2016e50613134a1ec9fe3cdb422e"
