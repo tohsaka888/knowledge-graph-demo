@@ -851,10 +851,10 @@
     "@types/prop-types" "*"
     csstype "^3.0.2"
 
-"@types/swagger-jsdoc@6.0.1":
-  version "6.0.1"
-  resolved "https://registry.yarnpkg.com/@types/swagger-jsdoc/-/swagger-jsdoc-6.0.1.tgz#94a99aca0356cb64ad2a6eb903ed034703453801"
-  integrity sha512-+MUpcbyxD528dECUBCEVm6abNuORdbuGjbrUdHDeAQ+rkPuo2a+L4N02WJHF3bonSSE6SJ3dUJwF2V6+cHnf0w==
+"@types/swagger-jsdoc@6.0.4":
+  version "6.0.4"
+  resolved "https://registry.yarnpkg.com/@types/swagger-jsdoc/-/swagger-jsdoc-6.0.4.tgz#bb4f60f3a5f103818e022f2e29ff8935113fb83d"
+  integrity sha512-W+Xw5epcOZrF/AooUM/PccNMSAFOKWZA5dasNyMujTwsBkU74njSJBpvCCJhHAJ95XRMzQrrW844Btu0uoetwQ==
 
 "@types/swagger-ui-react@^4.18.0":
   version "4.18.3"
@@ -1216,9 +1216,9 @@ bl@^4.0.3:
     readable-stream "^3.4.0"
 
 brace-expansion@^1.1.7:
-  version "1.1.11"
-  resolved "https://registry.yarnpkg.com/brace-expansion/-/brace-expansion-1.1.11.tgz#3c7fcbf529d87226f3d2f52b966ff5271eb441dd"
-  integrity sha512-iCuPHDFgrHX7H2vEI/5xpz07zSHB00TpugqhmYtVmMO6518mCuRMoOYFldEBl0g187ufozdaHgWKcYFb61qGiA==
+  version "1.1.18"
+  resolved "https://registry.yarnpkg.com/brace-expansion/-/brace-expansion-1.1.18.tgz#3ce74d89885136be1535341f8c3d4425c29a5cab"
+  integrity sha512-Edep/X9fGqVNmzKBVsDYIOtD+z1tuezV70LBjdCst9Tqu76lsnvRiZ6oTic1n+/BIwX6QDGAO94PN4N2SADvtw==
   dependencies:
     balanced-match "^1.0.0"
     concat-map "0.0.1"
@@ -2590,10 +2590,17 @@ js-file-download@^0.4.12:
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
   integrity sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==
 
-js-yaml@=4.1.0, js-yaml@^4.1.0:
+js-yaml@=4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-4.1.0.tgz#c1fb65f8f5017901cdd2c951864ba18458a10602"
   integrity sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA==
+  dependencies:
+    argparse "^2.0.1"
+
+js-yaml@^4.1.0:
+  version "4.3.1"
+  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-4.3.1.tgz#01216c001d67f48e2cd560d708c7af21090a3848"
+  integrity sha512-CY6crGq313MX8GkwvB7tzgp99vjQxY1++5y10/BKN/GUfHqWaOGQMNZkBvqSzsZKWk/ijwHlWzzkLulsGHhjWQ==
   dependencies:
     argparse "^2.0.1"
 
@@ -2774,7 +2781,14 @@ minimatch@9.0.3:
   dependencies:
     brace-expansion "^2.0.1"
 
-minimatch@^3.0.4, minimatch@^3.1.2:
+minimatch@^3.0.4:
+  version "3.1.5"
+  resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-3.1.5.tgz#580c88f8d5445f2bd6aa8f3cadefa0de79fbd69e"
+  integrity sha512-VgjWUsnnT6n+NUk6eZq77zeFdpW2LWDzP6zFGrCbHXiYNul5Dzqk2HHQ5uFH2DNW5Xbp8+jVzaeNt94ssEEl4w==
+  dependencies:
+    brace-expansion "^1.1.7"
+
+minimatch@^3.1.2:
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-3.1.2.tgz#19cd194bfd3e428f049a70817c038d89ab4be35b"
   integrity sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==
@@ -2865,11 +2879,11 @@ next-cors@^1.0.0:
     cors "^2.8.5"
 
 next-swagger-doc@^0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/next-swagger-doc/-/next-swagger-doc-0.4.0.tgz#1a727b663ab68a0630b3bffd96244533190aa08d"
-  integrity sha512-5Wt19Av4tOHVdXPJ7xTVvDJuiWuP5OYnY13BSq5SIjMtktFfhX4/9yZyaMCXImbUECu26PALn9CpRQRplIXJ3w==
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/next-swagger-doc/-/next-swagger-doc-0.4.1.tgz#959a2e36e413f3f7f3398518031c92f828f70a90"
+  integrity sha512-pFmFUOwNlJh7mr9P6b2obAHa9JAwgPK3oNTIzE9g/Gs+h2OG1T3C5SanzrqGA3dDncagyf/DbO5U+ZzNxKadWg==
   dependencies:
-    "@types/swagger-jsdoc" "6.0.1"
+    "@types/swagger-jsdoc" "6.0.4"
     cleye "1.3.2"
     isarray "2.0.5"
     swagger-jsdoc "6.2.8"
@@ -4472,9 +4486,9 @@ util-deprecate@^1.0.1:
   integrity sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==
 
 validator@^13.7.0:
-  version "13.12.0"
-  resolved "https://registry.yarnpkg.com/validator/-/validator-13.12.0.tgz#7d78e76ba85504da3fee4fd1922b385914d4b35f"
-  integrity sha512-c1Q0mCiPlgdTVVVIJIrBuxNicYE+t/7oKeI9MWLj3fh/uq2Pxh/3eeWbVZ4OcGW1TUf53At0njHw5SMdA3tmMg==
+  version "13.15.35"
+  resolved "https://registry.yarnpkg.com/validator/-/validator-13.15.35.tgz#81cf455c51f15b69d8d340be5914f3fab00dbf7f"
+  integrity sha512-TQ5pAGhd5whStmqWvYF4OjQROlmv9SMFVt37qoCBdqRffuuklWYQlCNnEs2ZaIBD1kZRNnikiZOS1eqgkar0iw==
 
 vary@^1:
   version "1.1.2"
